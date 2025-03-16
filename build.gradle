@@ -33,15 +33,12 @@ buildscript {
     ext.leakcanary_version = '1.5.4'
 
     repositories {
-        jcenter()
         google()
         mavenCentral()
         maven { url "https://plugins.gradle.org/m2/" }
-        maven { url 'http://dl.bintray.com/kaleidos/maven' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
-        classpath 'net.kaleidos.gradle.plugins:emerger:0.0.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         //classpath 'eu.inloop:easyrelease:0.2.2'
 
@@ -56,11 +53,8 @@ plugins {
 
 subprojects {
     repositories {
-        jcenter()
         google()
         mavenCentral()
-        maven { url 'https://dl.bintray.com/jetbrains/anko' }
-        maven { url  "http://dl.bintray.com/arturbosch/code-analysis" }
     }
 
     configurations {
